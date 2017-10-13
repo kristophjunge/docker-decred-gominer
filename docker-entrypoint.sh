@@ -2,9 +2,9 @@
 
 set -e
 
-#echo "Waiting ${STARTUP_DELAY} seconds"
+echo "Waiting ${STARTUP_DELAY} seconds"
 
-#sleep ${STARTUP_DELAY}
+sleep ${STARTUP_DELAY}
 
 echo "Starting miner"
 
