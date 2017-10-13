@@ -8,4 +8,6 @@ set -e
 
 echo "Starting miner"
 
-LD_LIBRARY_PATH=. ./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --logdir /var/log/gominer
+cd /opt/gominer
+
+./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --logdir /var/log/gominer
