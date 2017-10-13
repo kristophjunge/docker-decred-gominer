@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  gominer:
+    container_name: gominer
+    build: .
+    environment:
+      STARTUP_DELAY: "${STARTUP_DELAY}"
+      POOL: "${POOL}"
+      POOLUSER: "${POOLUSER}"
+      POOLPASS: "${POOLPASS}"
+    volumes:
+      - "/var/log/gominer:/var/log/gominer"
