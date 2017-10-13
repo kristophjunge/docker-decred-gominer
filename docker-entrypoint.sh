@@ -2,10 +2,10 @@
 
 set -e
 
-echo "Waiting ${STARTUP_DELAY} seconds"
+#echo "Waiting ${STARTUP_DELAY} seconds"
 
-sleep ${STARTUP_DELAY}
+#sleep ${STARTUP_DELAY}
 
 echo "Starting miner"
 
-./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --logdir /var/log/gominer
+LD_LIBRARY_PATH=. ./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --logdir /var/log/gominer
