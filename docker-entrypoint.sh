@@ -10,4 +10,4 @@ echo "Starting miner"
 
 cd /opt/gominer
 
-./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --logdir /var/log/gominer
+./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --intensity=${INTENSITY} --logdir=/var/log/gominer
