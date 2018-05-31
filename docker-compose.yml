@@ -9,5 +9,3 @@ services:
       POOL: "${POOL}"
       POOLUSER: "${POOLUSER}"
       POOLPASS: "${POOLPASS}"
-    volumes:
-      - "/var/log/gominer:/var/log/gominer"
