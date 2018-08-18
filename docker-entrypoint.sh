@@ -10,4 +10,4 @@ echo "Starting miner"
 
 cd /opt/gominer
 
-./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --intensity=${INTENSITY}
+./gominer -o ${POOL} -m ${POOLUSER} -n ${POOLPASS} --apilisten="0.0.0.0"
